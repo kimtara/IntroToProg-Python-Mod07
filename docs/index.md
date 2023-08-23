@@ -12,18 +12,16 @@ Pickling is useful because it can save complex data, such as dictionaries, tuple
 Pickling does have some drawbacks. It is specific to Python, so the objects you wish to preserve may not be readily understood by other languages. And although a pickled object is not easily read by a human, it is not secure and therefore vulnerable to malicious code if getting data from unknown/untrustworthy sources.
 
 ## How to Pickle
-To pickle an object in Python first import the pickle module. Then use the pickle.dump() method to serialize your data object and save it in a file. In the example shown in figure 1, a dictionary object with three keys/value pairs is assigned to dic_obj. We open a file in ‘wb’ or write binary mode because we are working with binary rather than string data. Many types of files can receive the byte stream data, including text, data, or pickle files, here we use one with .dat extension. We pass in two arguments when using the pickle.dump() method, the first indicating which object to save to the file, and the second indicating the file receiving the data. We then “dump” the object data into the specified file and close the file. To check our work, the data object and data type are printed out before saving the object to file (figure 3).
-   
+To pickle an object in Python first import the pickle module. Then use the pickle.dump() method to serialize your data object and save it in a file. In the example shown in figure 1, a dictionary object with three keys/value pairs is assigned to dic_obj. We open a file in ‘wb’ or write binary mode because we are working with binary rather than string data. Many types of files can receive the byte stream data, including text, data, or pickle files, here we use one with .dat extension. We pass in two arguments when using the pickle.dump() method, the first indicating which object to save to the file, and the second indicating the file receiving the data. We then “dump” the object data into the specified file and close the file. To check our work, the data object and data type are printed out before saving the object to file (figure 3).   
+     
 ![FIGURE 1](https://github.com/kimtara/IntroToProg-Python-Mod07/blob/main/docs/Figure1.png "Figure 1")  
-**Figure 1.** Pickling a dictionary in Python. Import the pickle module, open a file in ‘wb’ or write binary mode, and use the pickle.dump method to save the dictionary object in the file.
-
+**Figure 1.** Pickling a dictionary in Python. Import the pickle module, open a file in ‘wb’ or write binary mode, and use the pickle.dump method to save the dictionary object in the file.   
    
-To retrieve an object from a file, we use the pickle.load() method. As above, we start by importing the pickle module (if not previously loaded) and open the file that contains the data object with which we wish to work, this time in ‘rb’ or read binary mode. We use the pickle.load() method with an argument indicating which file contains the object of interest, and pass the resulting object into the data variable. The results shown in figure 3 show a dictionary matching our original object.
-
-
-FIGURE 2  
-**Figure 2.** Unpickling the preserved dictionary object from a file. The pickle module was imported previously. The file containing the object was opened in ‘rb’ or ‘read binary’ mode and the pickle.load() method used to retrieve the object from the specified file.
-
+To retrieve an object from a file, we use the pickle.load() method. As above, we start by importing the pickle module (if not previously loaded) and open the file that contains the data object with which we wish to work, this time in ‘rb’ or read binary mode. We use the pickle.load() method with an argument indicating which file contains the object of interest, and pass the resulting object into the data variable. The results shown in figure 3 show a dictionary matching our original object.  
+   
+![FIGURE 2](https://github.com/kimtara/IntroToProg-Python-Mod07/blob/main/docs/Figure2.png "Figure 2")  
+**Figure 2.** Unpickling the preserved dictionary object from a file. The pickle module was imported previously. The file containing the object was opened in ‘rb’ or ‘read binary’ mode and the pickle.load() method used to retrieve the object from the specified file.  
+   
 FIGURE 3  
 **Figure 3.** Running the pickling script. A dictionary object is printed, pickled, then unpickled from the file and printed again. Note that the data starts and ends as a dictionary type.
 
