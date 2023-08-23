@@ -21,10 +21,10 @@ To retrieve an object from a file, we use the pickle.load() method. As above, we
    
 ![FIGURE 2](https://github.com/kimtara/IntroToProg-Python-Mod07/blob/main/docs/Figure2.png "Figure 2")  
 **Figure 2.** Unpickling the preserved dictionary object from a file. The pickle module was imported previously. The file containing the object was opened in ‘rb’ or ‘read binary’ mode and the pickle.load() method used to retrieve the object from the specified file.  
-   
-FIGURE 3  
+    
+![FIGURE 3](https://github.com/kimtara/IntroToProg-Python-Mod07/blob/main/docs/Figure3.png "Figure 3")  
 **Figure 3.** Running the pickling script. A dictionary object is printed, pickled, then unpickled from the file and printed again. Note that the data starts and ends as a dictionary type.
-
+     
 ## Exception Handling
 Several types of errors can cause a script to crash or halt. Some of these errors are introduced by users giving input that is not expected or using the program in unanticipated ways. Errors that are detected during the execution of a statement are called exceptions. 
 
@@ -90,12 +90,14 @@ input('Hit enter to exit program')
 ```
 **Figure 5.** Script to calculate product and quotient of two numbers entered by the user. Exceptions raised when text entered or attempt to divide by zero handled in first two exception clauses. The third clause would capture any other type of exception and return some information as to the error.
 
-FIGURE 6  
+![FIGURE 6](https://github.com/kimtara/IntroToProg-Python-Mod07/blob/main/docs/Figure6.png "Figure 6")  
 **Figure 6.** User friendly message returned when user enters non-numerical characters.
 
-FIGURE 7  
+   
+![FIGURE 7](https://github.com/kimtara/IntroToProg-Python-Mod07/blob/main/docs/Figure7.png "Figure 7")  
 **Figure 7.** User friendly message when user enters zero for the second number.
 
+   
 ## Summary
 In this assignment I explored some basic techniques for working with file and handling exceptions. Exceptions are errors that occur while executing code. Many such errors can be handled with try/except blocks that capture the error and return some information about that error. Exception handling allows the developer to control what happens when an error occurs and provides the user with more user-friendly messages to understand what went wrong. I also learned how to save complex data, such as lists or dictionaries, using pickling. Pickling is a process of serialization that allows the data to be converted to a byte stream and saved to a file, preserving its structure and allowing it to be used intact in other Python scripts.
 
